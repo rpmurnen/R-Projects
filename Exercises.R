@@ -99,8 +99,9 @@ function7(21)
 function8 <- function(x)
 {
   n <- readline(prompt="Enter an integer: ")
-  # x <- readline(prompt="Enter a datafram$field: ")
-  y<-sub(n,NA, x)
+  z <- which(x==n)
+  y<-sub("\\n\\",NA,x, fixed=TRUE)
   y
 }
+
 function8(head(mtcars$mpg))
