@@ -84,10 +84,9 @@ function6(dup_vector)
 
 function7 <- function(x)
 {
-  #  Vector of numberes to test against
+
   y <- seq_len(x)
-  #  Modulo division. If remainder is 0 that number is a divisor of x so return it
-  y[ x%%y == 0 ]
+  y[x%%y==0]
   
 }
 function7(21)
