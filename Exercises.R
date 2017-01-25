@@ -98,10 +98,13 @@ function7(21)
 
 function8 <- function(x)
 {
-  n <- readline(prompt="Enter an integer: ")
-  z <- which(x==n)
-  y<-sub("\\n\\",NA,x, fixed=TRUE)
-  y
+  n <- as.integer(readline(prompt="Enter an integer: "))
+  
+  mtcars$mpg[mtcars$mpg==n] <- NA
+  
+  mtcars$mpg
 }
 
-function8(head(mtcars$mpg))
+function8(mtcars$mpg)
+
+
